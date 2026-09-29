@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6F2EA"/>
+      <stop offset="100%" stop-color="#EAE2D3"/>
+    </linearGradient>
+    <linearGradient id="penBody" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="50%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#172554"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-10%" width="135%" height="135%">
+      <feDropShadow dx="10" dy="16" stdDeviation="14" flood-color="#141B2D" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <circle cx="300" cy="225" r="185" fill="#EFE8DA" opacity="0.7"/>
+  <!-- Collector Case Backing -->
+  <g filter="url(#shadow)" transform="translate(150, 56)">
+    <rect x="0" y="0" width="300" height="338" rx="16" fill="#FAF7F2" stroke="#D8CEBE" stroke-width="2"/>
+    <rect x="16" y="18" width="268" height="44" rx="8" fill="#141B2D"/>
+    <text x="150" y="40" text-anchor="middle" fill="#F2D580" font-family="Georgia, serif" font-size="13" font-weight="bold" letter-spacing="2">PRECISION GEL 0.5mm</text>
+    <text x="150" y="54" text-anchor="middle" fill="#CBD5E1" font-family="sans-serif" font-size="8.5" letter-spacing="1.5">PACK OF 5 · ROYAL SAPPHIRE INK</text>
+    <!-- 5 Gel Pens -->
+    <g transform="translate(46, 82)">
+      <!-- Pen 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="6" y="0" width="16" height="72" rx="6" fill="#1E293B"/>
+        <rect x="2" y="14" width="4" height="44" rx="2" fill="#C59B27"/>
+        <rect x="7" y="72" width="14" height="120" fill="url(#penBody)"/>
+        <rect x="7" y="145" width="14" height="38" rx="2" fill="#0F172A" opacity="0.6"/>
+        <polygon points="7,192 21,192 16,220 12,220" fill="#C59B27"/>
+        <line x1="14" y1="220" x2="14" y2="228" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <!-- Pen 2 -->
+      <g transform="translate(45, 0)">
+        <rect x="6" y="0" width="16" height="72" rx="6" fill="#1E293B"/>
+        <rect x="2" y="14" width="4" height="44" rx="2" fill="#C59B27"/>
+        <rect x="7" y="72" width="14" height="120" fill="url(#penBody)"/>
+        <rect x="7" y="145" width="14" height="38" rx="2" fill="#0F172A" opacity="0.6"/>
+        <polygon points="7,192 21,192 16,220 12,220" fill="#C59B27"/>
+        <line x1="14" y1="220" x2="14" y2="228" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <!-- Pen 3 -->
+      <g transform="translate(90, 0)">
+        <rect x="6" y="0" width="16" height="72" rx="6" fill="#1E293B"/>
+        <rect x="2" y="14" width="4" height="44" rx="2" fill="#C59B27"/>
+        <rect x="7" y="72" width="14" height="120" fill="url(#penBody)"/>
+        <rect x="7" y="145" width="14" height="38" rx="2" fill="#0F172A" opacity="0.6"/>
+        <polygon points="7,192 21,192 16,220 12,220" fill="#C59B27"/>
+        <line x1="14" y1="220" x2="14" y2="228" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <!-- Pen 4 -->
+      <g transform="translate(135, 0)">
+        <rect x="6" y="0" width="16" height="72" rx="6" fill="#1E293B"/>
+        <rect x="2" y="14" width="4" height="44" rx="2" fill="#C59B27"/>
+        <rect x="7" y="72" width="14" height="120" fill="url(#penBody)"/>
+        <rect x="7" y="145" width="14" height="38" rx="2" fill="#0F172A" opacity="0.6"/>
+        <polygon points="7,192 21,192 16,220 12,220" fill="#C59B27"/>
+        <line x1="14" y1="220" x2="14" y2="228" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <!-- Pen 5 -->
+      <g transform="translate(180, 0)">
+        <rect x="6" y="0" width="16" height="72" rx="6" fill="#1E293B"/>
+        <rect x="2" y="14" width="4" height="44" rx="2" fill="#C59B27"/>
+        <rect x="7" y="72" width="14" height="120" fill="url(#penBody)"/>
+        <rect x="7" y="145" width="14" height="38" rx="2" fill="#0F172A" opacity="0.6"/>
+        <polygon points="7,192 21,192 16,220 12,220" fill="#C59B27"/>
+        <line x1="14" y1="220" x2="14" y2="228" stroke="#1E3A8A" stroke-width="2" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+</svg>

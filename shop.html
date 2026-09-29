@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Books &amp; Stationery | BookNest</title>
+    <meta name="description" content="Browse our curated collection of programming books, academic study guides, and premium stationery essentials at BookNest." />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="site-header">
+      <div class="container navbar">
+        <a href="index.html" class="brand-logo" aria-label="BookNest Home">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+          <span>BookNest</span>
+        </a>
+
+        <ul class="nav-links" id="primary-nav-links">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="shop.html" class="nav-link active">Shop</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-nav-btn" aria-label="Shopping Cart">
+            <span aria-hidden="true">🛒</span>
+            <span>Cart</span>
+            <span class="cart-count-badge">0</span>
+          </a>
+          <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Page Header -->
+      <section class="page-hero-bar">
+        <div class="container">
+          <p class="section-kicker">BookNest Catalog · “Discover. Read. Create.”</p>
+          <h1 class="section-title">Shop Books &amp; Stationery</h1>
+          <p class="section-desc">Explore 12 curated textbooks, academic guides, and studio-grade stationery essentials.</p>
+        </div>
+      </section>
+
+      <!-- Shop Controls & Product Grid -->
+      <section class="section">
+        <div class="container">
+          <!-- Search, Category Filter & Price Sort Toolbar -->
+          <div class="shop-toolbar">
+            <!-- Live Search Bar -->
+            <div class="search-input-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input
+                type="search"
+                id="shop-search-input"
+                class="search-input"
+                placeholder="Search books or stationery (e.g. Python, Notebook, Gel Pen)..."
+                aria-label="Search products"
+              />
+            </div>
+
+            <!-- Interactive Category Filter Tabs -->
+            <div class="filter-tabs-group" role="group" aria-label="Filter by category">
+              <button type="button" class="filter-tab-btn active" data-category="All">All (12)</button>
+              <button type="button" class="filter-tab-btn" data-category="Books">📚 Books (6)</button>
+              <button type="button" class="filter-tab-btn" data-category="Stationery">✏️ Stationery (6)</button>
+            </div>
+
+            <!-- Category Select & Price Sort Select -->
+            <div class="toolbar-selects">
+              <select id="shop-category-select" class="select-control" aria-label="Category filter">
+                <option value="All">Category: All</option>
+                <option value="Books">Category: Books</option>
+                <option value="Stationery">Category: Stationery</option>
+              </select>
+
+              <select id="shop-sort-select" class="select-control" aria-label="Sort products by price">
+                <option value="default">Sort by: Featured</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="rating-desc">Rating: High to Low</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Results Count -->
+          <div class="shop-results-meta">
+            <span id="shop-results-count">Showing 12 of 12 products</span>
+            <span>All prices in Indian Rupees (₹)</span>
+          </div>
+
+          <!-- Product Grid -->
+          <div class="products-grid" id="shop-products-grid">
+            <!-- Populated dynamically by js/script.js -->
+          </div>
+
+          <!-- Empty Search State -->
+          <div id="shop-empty-state" class="empty-state-box" style="display: none;">
+            <h2 class="empty-state-title">No matching products found</h2>
+            <p class="empty-state-desc">Try searching for a different keyword or reset the active category filter.</p>
+            <button type="button" id="shop-reset-filters" class="btn btn-primary btn-sm">Reset Filters</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html" class="footer-brand-title">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E6C675" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+              <span>BookNest</span>
+            </a>
+            <p class="footer-tagline">“Discover. Read. Create.”</p>
+            <p class="footer-desc">
+              A student-friendly online bookstore and stationery store designed to make books and study essentials easy to discover and purchase.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="footer-col-title">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="cart.html">Shopping Cart</a></li>
+              <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-col-title">Shop</h3>
+            <ul class="footer-links">
+              <li><a href="shop.html?category=Books">Books Collection</a></li>
+              <li><a href="shop.html?category=Stationery">Stationery Essentials</a></li>
+              <li><a href="product-details.html?id=1">The Art of Programming</a></li>
+              <li><a href="product-details.html?id=7">Premium Spiral Notebook</a></li>
+              <li><a href="product-details.html?id=12">Academic Study Planner</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-col-title">Contact Information</h3>
+            <ul class="footer-links">
+              <li>14 Knowledge Avenue, College Road, Bengaluru – 560001</li>
+              <li>Email: support@booknest.edu.in</li>
+              <li>Phone: +91 80 4123 8900</li>
+              <li>Hours: Mon – Sat, 9:00 AM – 8:00 PM IST</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>&copy; Copyright 2026 BookNest – Books &amp; Stationery Store. All rights reserved.</span>
+          <span>Crafted with HTML5, CSS3 &amp; Vanilla JavaScript</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

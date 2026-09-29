@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6F2EA"/>
+      <stop offset="100%" stop-color="#EAE2D3"/>
+    </linearGradient>
+    <linearGradient id="plannerCover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141B2D"/>
+      <stop offset="100%" stop-color="#1E293B"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-10%" width="135%" height="135%">
+      <feDropShadow dx="14" dy="20" stdDeviation="16" flood-color="#141B2D" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <circle cx="300" cy="225" r="185" fill="#EFE8DA" opacity="0.7"/>
+  <g filter="url(#shadow)" transform="translate(172, 48)">
+    <!-- Ribbon Bookmark -->
+    <polygon points="118,334 134,334 134,368 126,358 118,368" fill="#7A1C2E"/>
+    <!-- Page Block -->
+    <rect x="18" y="6" width="226" height="332" rx="8" fill="#FBF8F1" stroke="#D4AF37" stroke-width="1.5"/>
+    <!-- Linen Hardcover -->
+    <rect x="10" y="0" width="226" height="332" rx="8" fill="url(#plannerCover)"/>
+    <!-- Spine Binding Accent -->
+    <rect x="10" y="0" width="22" height="332" rx="4" fill="#7A1C2E"/>
+    <!-- Brass Corner Protectors -->
+    <polygon points="216,0 236,0 236,20" fill="#E6C675"/>
+    <polygon points="216,332 236,332 236,312" fill="#E6C675"/>
+    <!-- Gold Inner Border -->
+    <rect x="46" y="22" width="172" height="288" rx="3" fill="none" stroke="#C59B27" stroke-width="1.2" opacity="0.8"/>
+    <!-- Year & Title -->
+    <text x="132" y="64" text-anchor="middle" fill="#E6C675" font-family="sans-serif" font-size="10" letter-spacing="3">2026 — 2027</text>
+    <line x1="94" y1="76" x2="170" y2="76" stroke="#C59B27" stroke-width="1"/>
+    <text x="132" y="138" text-anchor="middle" fill="#FAF7F2" font-family="Georgia, serif" font-size="23" font-weight="bold" letter-spacing="1.5">ACADEMIC</text>
+    <text x="132" y="168" text-anchor="middle" fill="#E6C675" font-family="Georgia, serif" font-size="21" font-weight="bold" letter-spacing="1.5">STUDY PLANNER</text>
+    <text x="132" y="196" text-anchor="middle" fill="#CBD5E1" font-family="sans-serif" font-size="9" letter-spacing="1.5">DAILY SCHEDULE · HABIT TRACKER</text>
+    <!-- Mini Schedule Grid Icon -->
+    <g transform="translate(96, 218)" stroke="#E6C675" stroke-width="1.2" fill="none">
+      <rect x="0" y="0" width="72" height="48" rx="4"/>
+      <line x1="0" y1="14" x2="72" y2="14"/>
+      <line x1="24" y1="14" x2="24" y2="48"/>
+      <line x1="48" y1="14" x2="48" y2="48"/>
+    </g>
+    <text x="132" y="294" text-anchor="middle" fill="#FAF7F2" font-family="Georgia, serif" font-size="10" letter-spacing="2">BOOKNEST PRESS</text>
+  </g>
+</svg>

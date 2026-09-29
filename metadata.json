@@ -1,0 +1,6 @@
+{
+  "name": "BookNest – Books & Stationery Store",
+  "description": "Discover. Read. Create. A modern online bookstore and stationery shopping web application offering curated academic books and premium study essentials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

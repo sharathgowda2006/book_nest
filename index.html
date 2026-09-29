@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookNest – Books &amp; Stationery Store</title>
+    <meta name="description" content="Discover. Read. Create. A modern online bookstore and stationery shopping web application offering curated academic books and premium study essentials." />
+    <meta property="og:title" content="BookNest – Books &amp; Stationery Store" />
+    <meta property="og:description" content="Discover. Read. Create. Explore books, discover knowledge and find the stationery you need for every study session." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- =====================================================================
+         Navigation Bar (BookNest | Home | Shop | About | Cart)
+         ===================================================================== -->
+    <header class="site-header">
+      <div class="container navbar">
+        <!-- Zone 1: Brand Logo -->
+        <a href="index.html" class="brand-logo" aria-label="BookNest Home">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+          <span>BookNest</span>
+        </a>
+
+        <!-- Zone 2: Navigation Links -->
+        <ul class="nav-links" id="primary-nav-links">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+        </ul>
+
+        <!-- Zone 3: Cart Action & Mobile Menu Button -->
+        <div class="nav-actions">
+          <a href="cart.html" class="cart-nav-btn" aria-label="Shopping Cart">
+            <span aria-hidden="true">🛒</span>
+            <span>Cart</span>
+            <span class="cart-count-badge">0</span>
+          </a>
+          <button type="button" class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===================================================================
+           Hero Section
+           =================================================================== -->
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="hero-kicker">BookNest · “Discover. Read. Create.”</p>
+            <h1 class="hero-title">Your Next Great Read Starts Here.</h1>
+            <p class="hero-subtitle">
+              Explore books, discover knowledge and find the stationery you need for every study session.
+            </p>
+            <div class="hero-cta-group">
+              <a href="shop.html?category=Books" class="btn btn-primary">Shop Books</a>
+              <a href="shop.html?category=Stationery" class="btn btn-secondary">Explore Stationery</a>
+            </div>
+            <div class="hero-trust-row">
+              <span><strong>12 Curated Essentials</strong> in Books &amp; Stationery</span>
+              <span aria-hidden="true">·</span>
+              <span><strong>Free Delivery</strong> on orders ₹999+</span>
+              <span aria-hidden="true">·</span>
+              <span><strong>Cash on Delivery</strong> Available</span>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-image-frame">
+              <img src="images/hero-bookstore.jpg" alt="Warm sunlit BookNest bookstore study desk with hardcover books, spiral notebook, and pens" referrerpolicy="no-referrer" />
+            </div>
+            <div class="hero-caption-bar">
+              <span>Academic Editions &amp; Desk Essentials</span>
+              <span>2026 Student Collection</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           Featured Products (6 Attractive Product Cards)
+           =================================================================== -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="section-kicker">Handpicked Selection</p>
+              <h2 class="section-title">Featured Products</h2>
+              <p class="section-desc">Bestselling computer science textbooks, study guides, and everyday desk companions.</p>
+            </div>
+            <a href="shop.html" class="btn btn-secondary btn-sm">View All 12 Products →</a>
+          </div>
+
+          <div class="products-grid" id="featured-products-grid">
+            <!-- Dynamically populated by js/script.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           Shop by Category (Books & Stationery)
+           =================================================================== -->
+      <section class="section section-warm">
+        <div class="container">
+          <div class="section-header-center">
+            <p class="section-kicker">Browse Collections</p>
+            <h2 class="section-title">Shop by Category</h2>
+            <p class="section-desc">Discover thoughtfully organized shelves tailored for college coursework and creative study sessions.</p>
+          </div>
+
+          <div class="category-grid">
+            <!-- Category 1: Books -->
+            <article class="category-card">
+              <img src="images/category-books.jpg" alt="Curated stack of programming and academic hardcover books" class="category-card-bg" referrerpolicy="no-referrer" />
+              <div class="category-card-scrim"></div>
+              <div class="category-card-content">
+                <p class="category-card-kicker">6 Curated Titles</p>
+                <h3 class="category-card-title">📚 Books</h3>
+                <p class="category-card-desc">
+                  From foundational programming and data structures to artificial intelligence and academic study mastery.
+                </p>
+                <a href="shop.html?category=Books" class="btn btn-primary btn-sm">Browse Books →</a>
+              </div>
+            </article>
+
+            <!-- Category 2: Stationery -->
+            <article class="category-card">
+              <img src="images/category-stationery.jpg" alt="Premium spiral notebook, gel pens, highlighters, and study planner" class="category-card-bg" referrerpolicy="no-referrer" />
+              <div class="category-card-scrim"></div>
+              <div class="category-card-content">
+                <p class="category-card-kicker">6 Studio Essentials</p>
+                <h3 class="category-card-title">✏️ Stationery</h3>
+                <p class="category-card-desc">
+                  100 GSM twin-wire notebooks, smooth 0.5mm gel pens, pastel highlighters, sticky notes, and study planners.
+                </p>
+                <a href="shop.html?category=Stationery" class="btn btn-primary btn-sm">Browse Stationery →</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           Why Choose BookNest? (4 Feature Cards)
+           =================================================================== -->
+      <section class="section">
+        <div class="container">
+          <div class="section-header-center">
+            <p class="section-kicker">The BookNest Promise</p>
+            <h2 class="section-title">Why Choose BookNest?</h2>
+            <p class="section-desc">Built for students, educators, and lifelong readers who value quality and simplicity.</p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon-box" aria-hidden="true">📚</div>
+              <h3 class="feature-title">Curated Books</h3>
+              <p class="feature-desc">
+                Every textbook and study guide is selected for clarity, practical depth, and university curriculum relevance.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-box" aria-hidden="true">✏️</div>
+              <h3 class="feature-title">Quality Stationery</h3>
+              <p class="feature-desc">
+                Archival-grade paper, skip-free fine gel pens, and durable organizers engineered for daily campus life.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-box" aria-hidden="true">🚚</div>
+              <h3 class="feature-title">Easy Shopping</h3>
+              <p class="feature-desc">
+                Instant search, category filters, price sorting, and persistent cart memory across your browsing session.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-box" aria-hidden="true">💳</div>
+              <h3 class="feature-title">Simple Checkout</h3>
+              <p class="feature-desc">
+                Fast, transparent checkout with Cash on Delivery and Pay on Delivery options—no hidden charges.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================
+           Clean Promotional Section
+           =================================================================== -->
+      <section class="section" style="padding-top: 0;">
+        <div class="container">
+          <div class="promo-banner">
+            <div class="promo-content">
+              <p class="promo-tagline">BOOKNEST · DISCOVER. READ. CREATE.</p>
+              <h2 class="promo-title">“Everything you need for reading, learning and creating.”</h2>
+              <p class="promo-subtitle">
+                Equip your study desk for the new semester with our complete collection of books and stationery.
+              </p>
+            </div>
+            <div>
+              <a href="shop.html" class="btn btn-outline-light">Explore Complete Catalog →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================================
+         Professional Footer
+         ===================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="index.html" class="footer-brand-title">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E6C675" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+              <span>BookNest</span>
+            </a>
+            <p class="footer-tagline">“Discover. Read. Create.”</p>
+            <p class="footer-desc">
+              A student-friendly online bookstore and stationery store designed to make books and study essentials easy to discover and purchase.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="footer-col-title">Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="cart.html">Shopping Cart</a></li>
+              <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-col-title">Shop</h3>
+            <ul class="footer-links">
+              <li><a href="shop.html?category=Books">Books Collection</a></li>
+              <li><a href="shop.html?category=Stationery">Stationery Essentials</a></li>
+              <li><a href="product-details.html?id=1">The Art of Programming</a></li>
+              <li><a href="product-details.html?id=7">Premium Spiral Notebook</a></li>
+              <li><a href="product-details.html?id=12">Academic Study Planner</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="footer-col-title">Contact Information</h3>
+            <ul class="footer-links">
+              <li>14 Knowledge Avenue, College Road, Bengaluru – 560001</li>
+              <li>Email: support@booknest.edu.in</li>
+              <li>Phone: +91 80 4123 8900</li>
+              <li>Hours: Mon – Sat, 9:00 AM – 8:00 PM IST</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>&copy; Copyright 2026 BookNest – Books &amp; Stationery Store. All rights reserved.</span>
+          <span>Crafted with HTML5, CSS3 &amp; Vanilla JavaScript</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

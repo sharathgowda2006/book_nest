@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="600" height="450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F6F2EA"/>
+      <stop offset="100%" stop-color="#EAE2D3"/>
+    </linearGradient>
+    <linearGradient id="nbCover" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7A1C2E"/>
+      <stop offset="100%" stop-color="#52101D"/>
+    </linearGradient>
+    <filter id="shadow" x="-15%" y="-10%" width="135%" height="135%">
+      <feDropShadow dx="12" dy="18" stdDeviation="15" flood-color="#141B2D" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg)"/>
+  <circle cx="300" cy="225" r="185" fill="#EFE8DA" opacity="0.7"/>
+  <g filter="url(#shadow)" transform="translate(175, 52)">
+    <!-- Back page block -->
+    <rect x="28" y="6" width="218" height="334" rx="10" fill="#FBF8F1" stroke="#D8CEBE" stroke-width="1.5"/>
+    <!-- Front Hardcover -->
+    <rect x="22" y="0" width="218" height="334" rx="10" fill="url(#nbCover)"/>
+    <!-- Gold Elastic Closure Band -->
+    <rect x="206" y="0" width="14" height="334" fill="#C59B27" opacity="0.9"/>
+    <!-- Label Plate on Cover -->
+    <rect x="58" y="72" width="132" height="92" rx="4" fill="#FAF7F2" stroke="#C59B27" stroke-width="1.5"/>
+    <line x1="72" y1="98" x2="176" y2="98" stroke="#CBD5E1" stroke-width="1"/>
+    <line x1="72" y1="118" x2="176" y2="118" stroke="#CBD5E1" stroke-width="1"/>
+    <line x1="72" y1="138" x2="148" y2="138" stroke="#CBD5E1" stroke-width="1"/>
+    <text x="124" y="92" text-anchor="middle" fill="#7A1C2E" font-family="Georgia, serif" font-size="11" font-weight="bold" letter-spacing="1.5">BOOKNEST STUDIO</text>
+    <text x="124" y="154" text-anchor="middle" fill="#64748B" font-family="sans-serif" font-size="8.5" letter-spacing="1.2">100 GSM · 200 PAGES · A4</text>
+    <!-- Twin-Wire Brass Spiral Rings -->
+    <g fill="none" stroke="#D4AF37" stroke-width="3.5" stroke-linecap="round">
+      <path d="M10 26 C20 20, 26 20, 32 26"/>
+      <path d="M10 52 C20 46, 26 46, 32 52"/>
+      <path d="M10 78 C20 72, 26 72, 32 78"/>
+      <path d="M10 104 C20 98, 26 98, 32 104"/>
+      <path d="M10 130 C20 124, 26 124, 32 130"/>
+      <path d="M10 156 C20 150, 26 150, 32 156"/>
+      <path d="M10 182 C20 176, 26 176, 32 182"/>
+      <path d="M10 208 C20 202, 26 202, 32 208"/>
+      <path d="M10 234 C20 228, 26 228, 32 234"/>
+      <path d="M10 260 C20 254, 26 254, 32 260"/>
+      <path d="M10 286 C20 280, 26 280, 32 286"/>
+      <path d="M10 312 C20 306, 26 306, 32 312"/>
+    </g>
+    <g fill="#380913">
+      <circle cx="32" cy="26" r="3"/>
+      <circle cx="32" cy="52" r="3"/>
+      <circle cx="32" cy="78" r="3"/>
+      <circle cx="32" cy="104" r="3"/>
+      <circle cx="32" cy="130" r="3"/>
+      <circle cx="32" cy="156" r="3"/>
+      <circle cx="32" cy="182" r="3"/>
+      <circle cx="32" cy="208" r="3"/>
+      <circle cx="32" cy="234" r="3"/>
+      <circle cx="32" cy="260" r="3"/>
+      <circle cx="32" cy="286" r="3"/>
+      <circle cx="32" cy="312" r="3"/>
+    </g>
+  </g>
+</svg>
